@@ -1,0 +1,149 @@
+/* * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+} */
+
+body {
+    background-image: url("http://sse.tongji.edu.cn/liangshuang/wp/images/moviebg.png");
+    box-sizing: border-box;
+    font-weight: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.banner {
+    height: 50px;
+    width: 100%;
+    background-image: url("http://sse.tongji.edu.cn/liangshuang/wp/images/rancidbannerbg.png");
+}
+
+.banner div {
+    text-align: center;
+}
+
+.banner img {
+    text-align: center;
+}
+
+#heading {
+    font-weight: bold;
+    font-size: 24pt;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+.overall-content {
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    overflow: hidden;
+}
+
+.rotten {
+    float: left;
+    width: 550px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.rotten-section {
+    background-image: url("http://sse.tongji.edu.cn/liangshuang/wp/images/rottenlargebg.png");
+    background-size: auto 83px;
+    line-height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+#percentage {
+    font-weight: bold;
+    color: red;
+    font-size: 48pt;
+}
+
+.cols {
+    column-width: 47%;
+    column-count: 2;
+    column-gap: 1%;
+    background-color: #eeeeee;
+}
+
+.quote-box {
+    font-size: 10pt;
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 8px;
+    padding: 0 5px;
+    break-inside: avoid;
+}
+
+.quote-box img {
+    float: left;
+}
+
+.reviewer {
+    margin-bottom: 20px;
+    margin-left: 8px;
+    break-inside: avoid;
+}
+
+.reviewer img {
+    float: left;
+    margin-right: 5px;
+}
+
+.publication {
+    font-style: italic;
+}
+
+.general-overview-container {
+    float: right;
+    width: 250px;
+}
+
+.general-overview-container img {
+    float: right;
+    margin-bottom: 15px;
+}
+
+.general-overview {
+    background-color: #a2b964;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+.general-overview dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#link-list {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.general-overview ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    background-color: #a2b964;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+#break1 {
+    break-after: always;
+}
