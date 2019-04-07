@@ -40,6 +40,7 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 5px gray;
     overflow: hidden;
+    background-color: #eeeeee;
 }
 
 .rotten {
@@ -65,10 +66,11 @@ body {
 }
 
 .cols {
+    padding: 5px;
     column-width: 47%;
     column-count: 2;
     column-gap: 1%;
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
 }
 
 .quote-box {
@@ -89,6 +91,9 @@ body {
 .reviewer {
     margin-bottom: 20px;
     margin-left: 8px;
+}
+
+.review-box {
     break-inside: avoid;
 }
 
@@ -138,12 +143,18 @@ body {
     width: 100%;
     background-color: #a2b964;
     text-align: center;
+    overflow: inherit;
+    /* padding: 5px; */
 }
 
 .footer p {
-    margin: 0;
+    padding: 5px;
 }
 
 #break1 {
-    break-after: always;
+    /* break-after: always; */
+}
+
+.links {
+    float: right;
 }
