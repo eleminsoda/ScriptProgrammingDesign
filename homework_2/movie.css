@@ -59,6 +59,10 @@ body {
     margin: 0;
 }
 
+.rotten-section img {
+    vertical-align: text-bottom;
+}
+
 #percentage {
     font-weight: bold;
     color: red;
