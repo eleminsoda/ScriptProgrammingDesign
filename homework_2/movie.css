@@ -6,7 +6,7 @@
 body {
     background-image: url("http://sse.tongji.edu.cn/liangshuang/wp/images/moviebg.png");
     box-sizing: border-box;
-    font-weight: 10pt;
+    font-size: 10pt;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: 0;
@@ -54,13 +54,10 @@ body {
 .rotten-section {
     background-image: url("http://sse.tongji.edu.cn/liangshuang/wp/images/rottenlargebg.png");
     background-size: auto 83px;
-    line-height: 0px;
-    padding: 0;
-    margin: 0;
 }
 
 .rotten-section img {
-    vertical-align: text-bottom;
+    vertical-align: bottom;
 }
 
 #percentage {
@@ -70,11 +67,20 @@ body {
 }
 
 .cols {
-    padding: 5px;
+    /* padding: 5px;
     column-width: 47%;
     column-count: 2;
-    column-gap: 1%;
-    /* background-color: #eeeeee; */
+    column-gap: 1%; */
+}
+
+.left-col {
+    width: 47%;
+    float: left;
+}
+
+.right-col {
+    width: 47%;
+    float: right;
 }
 
 .quote-box {
@@ -90,6 +96,8 @@ body {
 
 .quote-box img {
     float: left;
+    padding-bottom: 2px;
+    padding-right: 2px;
 }
 
 .reviewer {
@@ -151,13 +159,11 @@ body {
     /* padding: 5px; */
 }
 
-.footer p {
-    padding: 5px;
-}
 
-#break1 {
-    /* break-after: always; */
-}
+/* 
+.footer p {
+    padding: 0px;
+} */
 
 .links {
     float: right;
