@@ -1,0 +1,78 @@
+body {
+    background-color: #eaf6f6;
+    font-family: Garamondin, serif;
+    font-size: 12pt;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+#show-area {
+    width: 80%;
+    height: 100px;
+    font-weight: bold;
+    font-size: 36pt;
+    font-family: monospace;
+    line-height: 100px;
+    border: #8ebebe solid 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.control-panel {
+    margin: 0 auto;
+    width: 510px;
+    /* background-color: bisque; */
+    height: 80px;
+}
+
+.control-panel>.div {
+    vertical-align: bottom;
+}
+
+.label {
+    font-weight: bold;
+    border-bottom: solid 1px #8ebebe;
+    text-align: left;
+    margin: 2px;
+}
+
+#play-control {
+    float: left;
+    width: 150px;
+    margin: 10px;
+}
+
+#play-control button {
+    width: 70px;
+    border: gray solid 1px;
+    background-color: white;
+}
+
+#speed-control {
+    float: left;
+    width: 100px;
+    margin: 10px;
+}
+
+#size-control {
+    float: left;
+    width: 200px;
+    margin: 10px;
+}
+
+.input-text-area{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#input-area{
+    border: gray solid 1px;
+    background-color: #ffffff;
+    height: 270px;
+}
