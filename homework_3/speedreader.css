@@ -1,6 +1,6 @@
 body {
     background-color: #eaf6f6;
-    font-family: Garamondin, serif;
+    font-family: Garamond, serif;
     font-size: 12pt;
 }
 
@@ -65,13 +65,13 @@ body {
     margin: 10px;
 }
 
-.input-text-area{
-    width: 600px;
+.input-text-area {
+    width: 552px;
     height: 300px;
     margin: 0 auto;
 }
 
-#text-input{
+#text-input {
     border: gray solid 1px;
     background-color: #ffffff;
 }
