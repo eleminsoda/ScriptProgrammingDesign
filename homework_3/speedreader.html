@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="speedreader.css">
+    <script src="speedreader.js"></script>
     <title>SpeedReader</title>
 </head>
 
@@ -21,30 +22,28 @@
     <div class="control-panel">
         <div id="play-control">
             <div class="label">Play Controls:</div>
-            <button id="start" onclick="">Start</button>
-            <button id="Stop" onclick="">Stop</button>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
         </div>
         <div id="speed-control">
             <div class="label">Speed:</div>
             <select id="speed">
-                <option>350 wpm</option>
+                <option value="171">350 wpm</option>
             </select>
         </div>
         <div id="size-control">
             <div class="label">Size:</div>
             <form id="size">
-                <input type="radio" value="0" checked="checked">Medium
-                <input type="radio" value="1">Big
-                <input type="radio" value="2">Bigger
+                <input type="radio" name="size" value="0" checked="checked">Medium
+                <input type="radio" name="size" value="1">Big
+                <input type="radio" name="size" value="2">Bigger
             </form>
         </div>
     </div>
 
     <div class="input-text-area">
         <div class="label">Input Text</div>
-        <div id="input-area">
-            
-        </div>
+        <textarea cols="80" rows="10" id="text-input"></textarea>
     </div>
 </body>
 

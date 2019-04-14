@@ -71,8 +71,7 @@ body {
     margin: 0 auto;
 }
 
-#input-area{
+#text-input{
     border: gray solid 1px;
     background-color: #ffffff;
-    height: 270px;
 }
