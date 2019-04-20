@@ -1,5 +1,8 @@
+// The JS file for the homework3, Script Programming design, Spring 2019
+
 'use strict'
 
+// when the page content finishes loading ...
 window.onload = function() {
     console.log("window.onload, start binding...");
     // set click triggers
@@ -21,11 +24,12 @@ let displayList = []
 let interval = 0;
 let index = -1;
 
+// called the the start button is pressed
 function startAnimation() {
     let showArea = document.getElementById("show-area");
 
     let text = document.getElementById('text-input').value;
-    let wordList = text.trim().split(' ');
+    let wordList = text.trim().split(/\s+/);
 
     if (wordList.length == 1 && wordList[0] === '') {
         console.log("the text area is empty");
@@ -67,6 +71,7 @@ function startAnimation() {
     }, speed);
 }
 
+// stop the animation
 function stopAnimation() {
     console.log("stop animation");
     clearInterval(interval);
@@ -75,6 +80,7 @@ function stopAnimation() {
     setDisableStatus('stop');
 }
 
+// change the font size according to the size selected
 function changeFontSize() {
     let sizeNodes = document.getElementsByName("size");
     for (let node of sizeNodes) {
@@ -90,6 +96,7 @@ function changeFontSize() {
     }
 }
 
+// change display speed
 function changeDisplaySpeed() {
     let newSpeed = parseInt(document.getElementById('speed').value);
     console.log('changing display speed to ' + newSpeed);
@@ -138,6 +145,7 @@ function disableButton(type) {
     button.style.backgroundColor = 'white';
 }
 
+// set the disable status of the textarea
 function setTextArea() {
     let textarea = document.getElementById('text-input');
     let status = textarea.disabled;
@@ -149,14 +157,8 @@ function setTextArea() {
     }
 }
 
+// set the disable status for both the button and the textarea
 function setDisableStatus(type) {
     disableButton(type);
     setTextArea();
 }
-
-// clear and reset the interval, and disable the button as well
-// function clearDisplay() {
-//     clearInterval(interval);
-//     interval = -1;
-//     setDisableStatus('stop');
-// }
