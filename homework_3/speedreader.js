@@ -20,7 +20,7 @@ window.onload = function() {
     disableButton('stop');
 }
 
-let displayList = []
+let displayList = [];
 let interval = 0;
 let index = -1;
 
