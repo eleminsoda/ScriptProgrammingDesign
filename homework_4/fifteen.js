@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /** row and column indexes start from 0
  *  array index starts from 1
@@ -16,6 +16,7 @@ let puzzleNodes = [];
 let nowIndex = [];
 let blankIndex = 16;
 
+// initialize the whole puzzle
 function insertPuzzle() {
     let puzzleArea = document.getElementById('puzzlearea');
     let puzzleCount = puzzleSize * puzzleSize;
@@ -33,11 +34,8 @@ function insertPuzzle() {
         // paint every piece of puzzle
         if (i !== blankIndex) {
             newNode.classList.add('showingpiece');
-
             newNode.style.backgroundPosition = col * (-100) + "px " + row * (-100) + "px";
-
             newNode.innerText = i;
-
         }
 
         puzzleArea.appendChild(newNode);
@@ -59,39 +57,14 @@ function move() {
     render();
 }
 
-// exchange the tile with the empty tile
+// exchange the tile with the empty tile. 
+// as it only deal with indexes, it's very fast
 function exchange(index, lasy) {
-    // let node = puzzleNodes[index - 1];
-
-    // deactivate the tile
-    // node.classList.remove('showingpiece');
-    // node.innerText = "";
-    // node.onclick = undefined;
-
-    // activate the empty tile
     let realIndex = nowIndex[index - 1];
-    // let realRow = Math.floor((realIndex - 1) / puzzleSize);
-    // let realCol = (realIndex - 1) % puzzleSize;
-    // let blankNode = puzzleNodes[blankIndex - 1];
-
-    // blankNode.classList.add('showingpiece');
-    // blankNode.style.backgroundPosition = realCol * (-100) + "px " + realRow * (-100) + "px";
-    // blankNode.innerText = realIndex;
-    // blankNode.onclick = move;
-
-    // fresh the indexes
-    // console.log("nowIndex: " + nowIndex);
-    // console.log("blankIndex: " + blankIndex);
-    // console.log("the index detected: " + index)
-    // console.log("real row and col: " + blankNode.backgroundPosition);
 
     nowIndex[blankIndex - 1] = realIndex;
     nowIndex[index - 1] = -1;
     blankIndex = index;
-
-    // console.log("refreshed nowIndex: " + nowIndex);
-    // console.log("--------------------")
-
 }
 
 // judge whether a tile is movable
@@ -125,6 +98,7 @@ function render() {
     }
 }
 
+// get all the indexes of the neighbors that are movable
 function findMovableNeighborIndex() {
     let increment = [(-1) * puzzleSize, -1, 1, puzzleSize];
     let neighborArr = [];
@@ -140,6 +114,7 @@ function findMovableNeighborIndex() {
     return neighborArr;
 }
 
+// shuffle the whole puzzle, adopt lasy rendering technique
 function shuffle() {
     for (let i = 0; i < 1000; i++) {
         let neighborArr = findMovableNeighborIndex();
